@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="ICICI Bank - GSTOD">
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="css/icon?family=Material+Icons">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/font-awesome.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/jquery.dataTables.css">
+<link rel="stylesheet" href="css/responsive.dataTables.css">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+</head>
+<body>
+<!-- multistep form -->
+<!--<form id="msform">-->
+<form id="msform" class="prefield-form form" action="/" method="post" role="form">
+	<div class="container-fluid header">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="logo"><a href="index.html"><img src="images/logo.png" alt="ICICI GSTOD" /></a></div>
+					</div>
+					<div class="col-md-10">
+						<ul id="progressbar">
+							<li class="active">Step 1</li>
+							<li>Step 2</li>
+							<li>Step 3</li>
+							<li>Step 4</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- progressbar -->
+    
+    <!-- fieldsets -->
+    <fieldset>
+    <div class="row form-block">
+    	<div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="form-group">
+            <input class="form-control" type="text" placeholder=" " required />
+            <label>Application No.</label>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="form-group">
+            <input class="form-control" type="text" placeholder=" " required />
+            <label>Name</label>
+            </div>
+        </div>
+    </div>
+    
+    <h2 class="fs-title">Operating Address of the Entity</h2>
+    <div class="row form-block">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="form-group">
+            <input class="form-control" type="text" placeholder=" " required />
+            <label>City</label>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="form-group">
+            <input class="form-control" type="text" placeholder=" " required />
+            <label>State</label>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="form-group">
+            <input class="form-control" type="text" placeholder=" " required />
+            <label>Pincode</label>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="form-group">
+            <input class="form-control" type="number" placeholder=" " required />
+            <label>Mobile No.</label>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="form-group">
+            <input class="form-control" type="text" placeholder=" " required />
+            <label>Email</label>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="fs-title">Activity Existing</h2>
+            <div class="row form-block">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="form-group">
+                    <input class="form-control" type="number" placeholder=" "  />
+                    <label>Since</label>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="form-group">
+                    <input class="form-control" type="date" placeholder=" "  />
+                    <label>No. of Employees</label>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="form-group">
+                    <input class="form-control" type="text" placeholder=" "  />
+                    <label>Proposed</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h2 class="fs-title">Industry</h2>
+            <div class="row form-block">
+            	<div class="col-md-12">
+                    <div class="form-group">
+                    <select class="form-control-select" onclick="this.setAttribute('value', this.value);" value=" " required>
+                        <option value=""></option>
+                        <option value="agr">Agriculture and Forestry</option>
+                        <option value="fis">Fishing</option>
+                        <option value="qua">Mining and Quarrying</option>
+                        <option value="maf">Manufacturing</option>
+                        <option value="ele">Electricity, Gas and Water supply</option>
+                        <option value="con">Construction</option>
+                        <option value="who">Wholesale and retail trade, Repair of Motor Vehicles, Motorcycles and Personal/household goods</option>
+                        <option value="hot">Hotel and Restaurants</option>
+                        <option value="tra">Transport, storage and Communications</option>
+                        <option value="fin">Financial Intermediation</option>
+                        <option value="rea">Real estate, Renting and business activities</option>
+                        <option value="pub">Public Administration and Defence, Compulsory Social Security</option>
+                        <option value="edu">Education</option>
+                        <option value="hea">Health and Social Work</option>
+                        <option value="com">Community, Social and Personal service Activities</option>
+                        <option value="eng">Electronics & Engineering</option>
+                        <option value="cru">Crude petroleum/refining & petrochemicals</option>
+                        <option value="roa">Road, port, telecom, urban development & other infra</option>
+                        <option value="mis">Miscellaneous</option>
+                        <option value="ser">Services -  Non finance</option>
+                        <option value="iro">Iron/Steel & Products</option>
+                        <option value="che">Chemical & Fertilisers</option>
+                        <option value="min">Mining</option>
+                        <option value="met">Metal & products (excl iron & steel)</option>
+                        <option value="aut">Automobiles</option>
+                        <option value="foo">Food & Beverages</option>
+                        <option value="cem">Cement</option>
+                        <option value="dru">Drugs & Pharmaceuticals</option>
+                        <option value="man">Manufacturing products excluding Metal</option>
+                        <option value="tex">Textile</option>
+                        <option value="gem">Gems & Jewellery</option>
+                        <option value="shi">Shipping</option>
+                        <option value="fmc">FMCG</option>
+                    </select>
+                    <label>Select Industry</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+	<input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    
+	<fieldset>
+    <div class="row">
+        <div class="col-sm-8"><h2 class="fs-title">Shareholding Pattern of Customer</h2></div>
+        <div class="col-sm-4">
+        </div>
+    </div>
+    <div class="row form-block">
+        <div class="col-sm-12">
+            <table id="" class="default-table display nowrap dataTable dtr-inline collapsed" width="100%">
+                <thead>
+                    <tr>
+                        <th>Name of Shareholder</th>
+                        <th>No. of Shares</th>
+                        <th>Shareholding Pattern (%)</th>
+                        <th>Qualification</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>4</td>
+                        <td>20%</td>
+                        <td>TEST</td>
+                    </tr>
+                    <tr>
+                        <td>Jack Leo</td>
+                        <td>3</td>
+                        <td>10%</td>
+                        <td>TEST</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <h2 class="fs-title">Details of Collateral Security offered, if any including 3<sup>rd</sup> Party Guarantor</h2>
+    <div class="row form-block">
+        <div class="col-sm-12">
+            <table id="" class="default-table display nowrap dataTable dtr-inline collapsed" width="100%">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Type of Collateral Offered</th>
+                        <th>Market Value (in millions)</th>
+                        <th>Net Worth (in millions)</th>
+                        <th>Upload</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <h2 class="fs-title">Details of any existing credit facilities by the entity from ICICI Bank</h2>
+    <div class="row form-block">
+        <div class="col-sm-12">
+           <table id="" class="default-table display nowrap dataTable dtr-inline collapsed" width="100%">
+                <thead>
+                    <tr>
+                        <th>Name of facility</th>
+                        <th>Sanctioned Amount (in millions)</th>
+                        <th>Present outstanding (in millions)</th>
+                        <th>Loan Account No</th>
+                        <th>Security offered</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sample Text</td>
+                        <td>XXXXX</td>
+                        <td>XXXXX</td>
+                        <td>XXXXX</td>
+                        <td>XXXXX</td>
+                    </tr>
+                    <tr>
+                        <td>Sample Text</td>
+                        <td>XXXXX</td>
+                        <td>XXXXX</td>
+                        <td>XXXXX</td>
+                        <td>XXXXX</td>
+                    </tr>
+                    <tr>
+                        <td>Sample Text</td>
+                        <td>XXXXX</td>
+                        <td>XXXXX</td>
+                        <td>XXXXX</td>
+                        <td>XXXXX</td>
+                    </tr>
+                    <tr>
+                        <td>Sample Text</td>
+                        <td>XXXXX</td>
+                        <td>XXXXX</td>
+                        <td>XXXXX</td>
+                        <td>XXXXX</td>
+                    </tr>
+                    <tr>
+                        <td>Sample Text</td>
+                        <td>XXXXX</td>
+                        <td>XXXXX</td>
+                        <td>XXXXX</td>
+                        <td>XXXXX</td>
+                    </tr>
+                    <tr>
+                        <td>Sample Text</td>
+                        <td>XXXXX</td>
+                        <td>XXXXX</td>
+                        <td>XXXXX</td>
+                        <td>XXXXX</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    
+    <fieldset>
+    <h2 class="fs-title">Month on month Usage of limit</h2>
+    <div class="row form-block">
+        <div class="col-sm-12">
+            <table id="" class="default-table display nowrap dataTable dtr-inline collapsed" width="100%">
+                <thead>
+                    <tr>
+                        <th>Existing Limit (in millions)</th>
+                        <th>Oct'18</th>
+                        <th>Sep'18</th>
+                        <th>Aug'18</th>
+                        <th>Jul'18</th>
+                        <th>Jun'18</th>
+                        <th>May'18</th>
+                        <th>Apr'18</th>
+                        <th>Mar'18</th>
+                        <th>Feb'18</th>
+                        <th>Jan'18</th>
+                        <th>Dec'17</th>
+                        <th>Nov'17</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <h2 class="fs-title">Details of associate/ group entities</h2>
+    <div class="row form-block">
+        <div class="col-sm-12">
+            <table id="" class="default-table display nowrap dataTable dtr-inline collapsed" width="100%">
+                <thead>
+                    <tr>
+                        <th>Name of Entity</th>
+                        <th>Date of Incorporation</th>
+                        <th>City</th>
+                        <th>Pincode</th>
+                        <th>PAN</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Relationship of Proprietors/Partners/Directors with the offcials of the bank/ Director of the bank</p>
+        </div>
+    </div>
+    
+    <h2 class="fs-title">Declarations</h2>
+    <div class="row form-block">
+        <div class="col-sm-12">
+            <table id="" class="default-table display nowrap dataTable dtr-inline collapsed" width="100%">
+                <thead>
+                    <tr>
+                        <th>Statutory Obligations</th>
+                        <th>Whether compiled with (Yes/No) if not applicable then write NA</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    	<td class="text-left">Registration under Shops and Establishment Act</td>
+                        <td>
+                            <select>
+                            	<option value=""></option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                    	<td class="text-left">Registration MSME/ Udhyog Aadhar Number</td>
+                        <td>
+                            <select>
+                            	<option value=""></option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                    	<td class="text-left">Drug License</td>
+                        <td>
+                            <select>
+                            	<option value=""></option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                    	<td class="text-left">Latest Sales tax return filed</td>
+                        <td>
+                            <select>
+                            	<option value=""></option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                    	<td class="text-left">Latest income tax return filed</td>
+                        <td>
+                            <select>
+                            	<option value=""></option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                    	<td class="text-left">Any other statutory dues remaining outstanding</td>
+                        <td>
+                            <select>
+                            	<option value=""></option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                    	<td class="text-left">LEI</td>
+                        <td>
+                            <select>
+                            	<option value=""></option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                    	<td class="text-left">Category</td>
+                        <td>
+                            <select id="category">
+                            	<option value=""></option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </td>
+                        <td>
+                            <div id="category-options-show" hidden>
+                            	<select>
+                                    <option value=""></option>
+                                    <option value="sc">SC</option>
+                                    <option value="st">ST</option>
+                                    <option value="obc">OBC</option>
+                                    <option value="min">MIN</option>
+                                    <option value="gen">General</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td class="text-left">Whether the MSME unit is ZED (Zero Defect Effect) </td>
+                        <td>
+                        <select id="msme">
+                        	<option value=""></option>
+                        	<option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                        </td>
+                        <td>
+                        	<div id="msme-options-show" hidden>
+                            	<select>
+                                    <option value=""></option>
+                                    <option value="bro">Bronze</option>
+                                    <option value="sil">Silver</option>
+                                    <option value="gol">Gold</option>
+                                    <option value="dia">Diamond</option>
+                                    <option value="pla">Platinum</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    
+    <fieldset>
+    <h2 class="fs-title">Documents Upload</h2>
+    <h3>GST Returns</h3>
+    <div class="row form-block">
+        <div class="col-md-5">        
+            <div class="images">
+                <div class="pic">Upload PDF GST Receipt</div>
+            </div>
+        </div>
+        <div class="col-md-2">OR</div>
+        <div class="col-md-5"><a href="#">GSTN Login</a></div>
+    </div>
+    
+    <h3>Bank Statements</h3>
+    <div class="row form-block">
+        <div class="col-md-5">        
+            <div class="images">
+                <div class="pic">Upload  Bank Statements</div>
+            </div>
+        </div>
+        <div class="col-md-2">OR</div>
+        <div class="col-md-5"><a href="#">Net Banking Login</a></div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Last Sanction Letter</h3>
+            <div class="row form-block">
+                <div class="images">
+                    <div class="pic">Upload last sanction letter</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h3>Upload ITR with Computation of Income</h3>
+            <div class="row form-block">
+                <div class="images">
+                    <div class="pic">Upload ITR</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="text-left"><input type="checkbox"> Accept terms and conditions</div>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="save" class="action-button" value="Save" />
+    <input type="submit" name="submit" class="next action-button" value="Submit" />
+    </fieldset>
+
+	<fieldset>
+	<div class="last-screen">
+    <h1><img src="images/tick.png" alt="Congratulation!!!"> Congratulation !!!</h1>
+	<p>Your ICICI Bank GST Business Loan facility against your <b>Application GSTOD00000000092</b> is under credit assessment. Our Relationship Manager will contact you for furthuer completion within 3 working days.</p>
+    <input type="button" name="save" class="action-button width-auto" value="Download your Application" />
+	</center>
+    </fieldset>
+
+</form>
+<footer>Powered by Servosys Solutions</footer>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.easing.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.dataTables.js"></script>
+<script src="js/dataTables.responsive.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

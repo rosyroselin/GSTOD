@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ICICI Bank || GSTOD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="ICICI Bank - GSTOD">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/font-awesome.css" type="text/css" media="all">
+</head>
+<!-- //Head -->
+<!-- Body -->
+<body>
+<!--Loader Start-->
+<div class="loading" hidden>
+   <div class="mask"></div>
+	<div class="cssload-loader"><span class="cssload-loader-inner"></span></div>
+	<div class="processRequest">Processing your request</div>
+</div>
+<!--Loader End-->
+    <div class="content-w3ls">
+    	
+        <div class="content-bottom">
+		<h1 class="title-agile text-center"><img alt="ICICI Bank" title="ICICI Bank" src="images/logo.jpg" /></h1>
+            <form action="#" method="post">
+                <div class="field-group">
+                    <span class="fa fa-mobile" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="text1" id="text1" type="number" value="" placeholder="Mobile Number" required />
+                    </div>
+                </div>
+				<!--hidden otp section-->
+				<div class="hidden-otp" style="display:none;">
+					<div class="field-group">
+						<span class="fa fa-key" aria-hidden="true"></span>
+						<div class="wthree-field">
+							<input name="password" id="myInput" type="Password" placeholder="OTP" required />
+						</div>
+					</div>
+					<div class="field-group">
+						<div class="check">
+							<label class="checkbox w3l">
+							<input type="checkbox" onclick="myFunction()"/>
+							<i> </i>show OTP</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6"><a href="#">Resend OTP</a></div>
+						<div class="col-md-6 text-right"><div class="wthree-field"><input name="" type="submit" value="Login" onClick="window.location.href='index.html';"  /></div></div>
+					</div>
+				</div>
+				<!--hidden otp section-->
+                <div class="field-group">
+                    <div class="wthree-field"><input id="saveForm" name="saveForm" type="submit" class="send-otp hide-otp" value="Send OTP" /></div>
+                </div>
+				
+				<!--Terms Start-->
+				<div class="terms">
+				<h1>Terms & Conditions Apply.</h1>
+				<p>The grant of overdraft facility is at the absolute discretion of ICICI Bank ("Bank") and is subject to submission of requisite documents and meeting Bank's eligibility criteria. The Bank reserves the right, at any time, to modify/alter any of the terms & conditions of the facility. The applicant authorizes the Bank to assess the Credit Bureau report of the Entity/ Individuals.</p>
+				</div>
+				<!--Terms End-->
+            </form>
+        </div>
+    </div>
+	<footer>Powered by Servosys Solutions</footer>
+</body>
+<!-- script for show password -->
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script>
+	function myFunction() {
+		var x = document.getElementById("myInput");
+		if (x.type === "password") {
+			x.type = "text";
+		} else {
+			x.type = "password";
+		}
+	}
+//hidden otp section
+	 $(".hide-otp").click(function()
+		 {
+			$(".hidden-otp").show('slow');
+			$(".hide-otp").hide('slow')
+			return false;
+		 }); 
+</script>
+<!-- //script for show password -->
+</html>
